@@ -3,7 +3,7 @@ from langchain.embeddings import SentenceTransformerEmbeddings
 
 embeddings = SentenceTransformerEmbeddings(model_name="llmware/industry-bert-insurance-v0.1")
 
-prompt = PromptTemplate(template=prompt_template, input_variables=['context', 'question'])
+#prompt = PromptTemplate(template=prompt_template, input_variables=['context', 'question'])
 
 load_vector_store = Chroma(persist_directory="stores/insurance_cosine", embedding_function=embeddings)
 
